@@ -231,7 +231,7 @@ secure-payment-gateway/
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone (https://github.com/karanvyapari08/secure-payment-gateway-.git)
 ```
 
 ### 2. Move the Project
@@ -335,6 +335,6 @@ It is a simulated payment environment and is not intended to process real financ
 
 Cybersecurity Analyst
 
-GitHub: YOUR_GITHUB_PROFILE
+GitHub: https://github.com/karanvyapari08
 
 LinkedIn: www.linkedin.com/in/karanvyapari
