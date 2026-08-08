@@ -1,0 +1,16 @@
+# Security headers -> mitigates XSS, clickjacking, MIME sniffing
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Content-Security-Policy "default-src 'self'"
+    Header set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Block direct access to config/includes if placed under web root
+<FilesMatch "\.(sql)$">
+    Require all denied
+</FilesMatch>
